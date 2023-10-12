@@ -10,6 +10,7 @@ Before you begin, ensure you have the following prerequisites installed on your 
 
 1. Node.js: [Download and Install Node.js](https://nodejs.org/)
 2. npm (Node Package Manager): npm is included with Node.js.
+3. SQLite: [Download and Install SQLite](https://www.sqlite.org/download.html)
 
 ## Project Setup
 
@@ -19,7 +20,7 @@ Follow these steps to set up and initialize the project:
 
    ```bash
    git clone <repository-url>
-   cd simple-api
+   cd <repository-name>
    ```
 
 2. **Install Dependencies:**

@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "2ee17d9c-d257-419e-aec4-820538f77961",
+		"name": "Webtech API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16028701"
+	},
+	"item": [
+		{
+			"name": "Get all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/products/",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get product by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/products/1/",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"products",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update product by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Product 1 - Updated\",\n    \"price\": 100,\n    \"description\": \"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus harum at pariatur consequuntur quasi. Incidunt minus quis laudantium nemo sapiente corporis qui veniam impedit. Mollitia inventore consequuntur exercitationem molestias obcaecati.\",\n    \"image\": \"https://picsum.photos/600\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/products/1/",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"products",
+						"1",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete product by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/products/1/",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"products",
+						"1",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Product 1\",\n    \"price\": 100,\n    \"description\": \"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus harum at pariatur consequuntur quasi. Incidunt minus quis laudantium nemo sapiente corporis qui veniam impedit. Mollitia inventore consequuntur exercitationem molestias obcaecati.\",\n    \"image\": \"https://picsum.photos/600\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/products/",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"products",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "API_URL",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}

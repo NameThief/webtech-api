@@ -2,10 +2,13 @@ const express = require("express");
 const sqlite3 = require("sqlite3");
 const app = express();
 const port = process.env.PORT || 3000;
+const cors = require("cors");
 
 const db = new sqlite3.Database("database.db");
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(cors());
 
 // Create a product
 app.post("/products", (req, res) => {
