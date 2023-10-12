@@ -225,3 +225,7 @@ HTTP/1.1 200 OK
 ```
 
 These examples demonstrate how to make requests to each of the API endpoints and what to expect in the response. Users can use these examples as a reference when interacting with your API.
+
+## Postman Collection
+
+You can import the [Postman](https://www.postman.com/) collection provided in this repository to test the API endpoints. The collection is available in the `postman` directory.
