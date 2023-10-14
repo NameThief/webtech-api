@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 // Routes
-app.use("/products", require("./routes/products"));
+// app.use("/products", require("./routes/products"));
 
 app.get("/", (req, res) => {
   res.json({ message: "Hello World" });
