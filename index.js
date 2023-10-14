@@ -11,6 +11,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
+app.get("/", (req, res) => {
+  res.json({ message: "Hello World" });
+});
+
 // Create a product
 app.post("/products", (req, res) => {
   const { name, price, description, image } = req.body;
@@ -106,3 +110,5 @@ app.delete("/products/:id", (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+export default app;
