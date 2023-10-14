@@ -9,6 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 // Routes
+// (uncomment this line if you want to access the products API)
 // app.use("/products", require("./routes/products"));
 
 app.get("/", (req, res) => {
